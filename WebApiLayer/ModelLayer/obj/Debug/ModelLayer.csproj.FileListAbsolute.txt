@@ -1,0 +1,6 @@
+C:\Users\Metin\source\repos\WebApiLayer\ModelLayer\bin\Debug\ModelLayer.dll
+C:\Users\Metin\source\repos\WebApiLayer\ModelLayer\bin\Debug\ModelLayer.pdb
+C:\Users\Metin\source\repos\WebApiLayer\ModelLayer\obj\Debug\ModelLayer.csprojAssemblyReference.cache
+C:\Users\Metin\source\repos\WebApiLayer\ModelLayer\obj\Debug\ModelLayer.csproj.CoreCompileInputs.cache
+C:\Users\Metin\source\repos\WebApiLayer\ModelLayer\obj\Debug\ModelLayer.dll
+C:\Users\Metin\source\repos\WebApiLayer\ModelLayer\obj\Debug\ModelLayer.pdb

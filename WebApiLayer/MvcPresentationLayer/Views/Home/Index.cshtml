@@ -1,0 +1,33 @@
+﻿@model IEnumerable<ModelLayer.Employee>
+@{
+    ViewBag.Title = "Employee List";
+}
+
+<div class="jumbotron">
+    <h1>Employee List</h1>
+
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <table class="table">
+            <tr>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>CONTACT</th>
+                <th>ADDRESS</th>
+            </tr>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Id</td>
+                    <td>@item.Name</td>
+                    <td>@item.ContactNumber</td>
+                    <td>@item.Address</td>
+                </tr>
+            }
+
+        </table>
+    </div>
+
+</div>
