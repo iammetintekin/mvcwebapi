@@ -34,13 +34,10 @@ namespace MvcPresentationLayer.Controllers
             using(HttpClient client = new HttpClient())
             {
                 string url = "http://localhost:9111/api/Employee?id="+id;
-
+                Task<HttpResponseMessage> result = client.GetAsync(url);
                 string input = "test:123";
                 byte[] array = Encoding.ASCII.GetBytes(input);
                 client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", Convert.ToBase64String(array));
-
-
-                Task<HttpResponseMessage> result = client.GetAsync(url);
                 if (result.Result.IsSuccessStatusCode)
                 {
                     Task<string> serializedResult = result.Result.Content.ReadAsStringAsync();
@@ -49,6 +46,7 @@ namespace MvcPresentationLayer.Controllers
             }
             return employee;
         }
+
 
         IEnumerable<Employee> GetEmployee()
         {
@@ -61,7 +59,6 @@ namespace MvcPresentationLayer.Controllers
                 string input = "test:123";
                 byte[] array = Encoding.ASCII.GetBytes(input);
                 client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", Convert.ToBase64String(array));
-
                 Task<HttpResponseMessage> result = client.GetAsync(url);
                 if (result.Result.IsSuccessStatusCode)
                 {

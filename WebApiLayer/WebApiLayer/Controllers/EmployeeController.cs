@@ -32,6 +32,7 @@ namespace WebApiLayer.Controllers
             });
         }
         // GET api/<controller>
+        [Filters.CustomAuthentication]
         public IEnumerable<Employee> Get()
         {
             return employees;
@@ -39,6 +40,7 @@ namespace WebApiLayer.Controllers
 
         // GET api/<controller>/5
         //http://localhost:9111/api/Employee/1
+        [Filters.CustomAuthentication]
         public Employee Get(int id)
         {
             return employees.FirstOrDefault<Employee>(x=>x.Id.Equals(id));
