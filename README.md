@@ -4,5 +4,5 @@ USER LIST
 ![screenshot1](https://github.com/iammetintekin/mvcwebapi/blob/main/WebApiLayer/MvcPresentationLayer/Content/allget.png?raw=true)
 
 SINGLE USER
-![screenshot1](https://github.com/iammetintekin/mvcwebapi/blob/main/WebApiLayer/MvcPresentationLayer/Content/singleGet?raw=true)
+![screenshot1](https://github.com/iammetintekin/mvcwebapi/blob/main/WebApiLayer/MvcPresentationLayer/Content/singleGet.png?raw=true)
 
